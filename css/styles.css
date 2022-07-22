@@ -22,6 +22,21 @@ body {
   background-color: var(--primery-bg-color);
   color: var(--first-text-color);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
 /* Скрывает элементы с классом visually-hidden */
 
 .visually-hidden {
@@ -35,6 +50,19 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .list {
@@ -62,12 +90,43 @@ body {
 
 /* HEADER */
 
+.header {
+  padding: 24px 0 24px;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  /* gap: 93px; */
+}
+
+.nav-list {
+  display: flex;
+  gap: 50px;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-left: auto;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
+
+  margin-right: 93px;
   color: var(--second-text-color);
 }
 
