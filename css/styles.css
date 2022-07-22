@@ -13,6 +13,10 @@
   --accent-color: #2196f3;
   --hover-color-btn: #188ce8;
   --hover-link: #2196f3;
+
+  /* Margin */
+
+  --marg-r-30: 30px;
 }
 
 body {
@@ -36,6 +40,12 @@ p {
 ul {
   margin: 0;
   padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* Скрывает элементы с классом visually-hidden */
 
@@ -191,7 +201,7 @@ ul {
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -207,7 +217,7 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.06em;
 
   background-color: var(--accent-color);
@@ -226,6 +236,9 @@ ul {
 }
 
 /* Peculiarities */
+/* .peculiarities {
+  background-color: tomato;
+} */
 
 .peculiarities-list {
   display: flex;
@@ -249,8 +262,22 @@ ul {
 
 /* Section Specialization */
 
+.specialization {
+  background-color: teal;
+  padding-top: 0;
+}
+
 .specialization-title {
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.specialization-list {
+  display: flex;
+}
+
+.specialization-item:not(:last-child) {
+  margin-right: var(--marg-r-30);
 }
 
 /* Section team */
