@@ -4,7 +4,7 @@
   --primery-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
-
+  --primery-btn-color: #f5f4fa;
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --main-title-color: #ffffff;
   --white-text-color: #ffffff;
@@ -368,31 +368,80 @@ img {
 
 /* Filter */
 
+.filter-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* если строка будет переполнятся  flex-wrap: wrap; */
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+/* .filter-list-item + .filter-list-item {
+  margin-left: 8px;
+} */
+
 .filter-btn {
+  padding: 6px 22px;
+
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: calc(26 / 16);
   text-align: center;
-  color: var(--second-text-color);
   letter-spacing: 0.03em;
+  color: var(--second-text-color);
+  background: var(--primery-btn-color);
+
+  border: transparent;
+  border-radius: 4px;
   cursor: pointer;
 }
 
+/* .filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+} */
+
+.filter-btn.active,
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
-}
-
-.filter-btn.active {
-  background-color: var(--accent-color);
-  color: var(--white-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /* Portfolio cards */
 
+.cards-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.cards-list-item {
+  /* outline: 2px solid teal; */
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.card-content {
+  padding: 20px 24px;
+}
+
 .cards-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
