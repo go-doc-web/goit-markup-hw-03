@@ -13,6 +13,7 @@
   --accent-color: #2196f3;
   --hover-color-btn: #188ce8;
   --hover-link: #2196f3;
+  --border-line: #ececec;
 
   /* Margin */
 
@@ -108,7 +109,7 @@ img {
 
 .header {
   padding: 24px 0 24px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-line);
 }
 
 .header-container {
@@ -440,7 +441,7 @@ img {
 
 .card-content {
   padding: 20px 24px 19px;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--border-line);
   border-top: none;
 }
 
