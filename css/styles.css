@@ -330,18 +330,26 @@ img {
 /* Footer */
 
 .footer {
+  padding: 60px 0;
   background-color: var(--footer-bg-color);
 }
 
 .footer-logo {
+  padding: 10px 0;
   color: var(--white-text-color);
+  margin-bottom: 20px;
 }
 
 .address {
   font-style: normal;
 }
 
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .address-link {
+  padding: 5px 0;
   line-height: calc(24 / 14);
   color: var(--white-text-color);
 }
