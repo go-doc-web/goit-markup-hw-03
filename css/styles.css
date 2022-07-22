@@ -128,13 +128,6 @@ img {
   gap: 50px;
 }
 
-.contacts-list {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  margin-left: auto;
-}
-
 .logo {
   display: inline-block;
   padding: 15px 0;
@@ -171,6 +164,13 @@ img {
   color: var(--hover-link);
 }
 
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-left: auto;
+}
+
 .contact-link {
   display: inline-block;
   padding: 15px 0;
@@ -201,7 +201,7 @@ img {
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  /* text-align: center; */
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -211,7 +211,6 @@ img {
 .hero-btn {
   min-width: 200px;
   min-height: 50px;
-  /* padding: 10px 32px; */
 
   font-family: inherit;
   font-weight: 700;
@@ -224,8 +223,6 @@ img {
   color: var(--white-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  border-left: 0;
-  border-right: 0;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -242,6 +239,11 @@ img {
 
 .peculiarities-list {
   display: flex;
+  align-items: center;
+}
+
+.peculiarities-item {
+  max-width: 270px;
 }
 
 .peculiarities-item:not(:last-child) {
@@ -424,20 +426,22 @@ img {
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
+  /* gap: 30px; */
 }
 
 .cards-list-item {
-  /* outline: 2px solid teal; */
   flex-basis: calc(100% / 3 - 30px);
+  /* flex-basis: calc((100% - 60px) / 3); */
   margin-top: 30px;
   margin-left: 30px;
 
-  background: #ffffff;
-  border: 1px solid #eeeeee;
+  background: var(--primery-bg-color);
 }
 
 .card-content {
-  padding: 20px 24px;
+  padding: 20px 24px 19px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .cards-title {
