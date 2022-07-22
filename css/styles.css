@@ -65,6 +65,12 @@ ul {
   padding-bottom: 94px;
 }
 
+/* Центрует строчные элементы */
+
+.centered {
+  text-align: center;
+}
+
 .list {
   list-style: none;
 }
@@ -120,13 +126,16 @@ ul {
 }
 
 .logo {
+  display: inline-block;
+  padding: 15px 0;
+  margin-right: 93px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
 
-  margin-right: 93px;
   color: var(--second-text-color);
 }
 
@@ -135,6 +144,8 @@ ul {
 }
 
 .nav-list-link {
+  display: inline-block;
+  padding: 15px 0;
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -151,6 +162,8 @@ ul {
 }
 
 .contact-link {
+  display: inline-block;
+  padding: 15px 0;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -166,28 +179,44 @@ ul {
 
 .hero {
   /* Времменный background */
-
+  padding: 200px 0;
   background-color: var(--footer-bg-color);
 }
+
 .hero-heading {
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: var(--main-title-color);
 }
 
 .hero-btn {
+  min-width: 200px;
+  min-height: 50px;
+  /* padding: 10px 32px; */
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   text-align: center;
   letter-spacing: 0.06em;
+
   background-color: var(--accent-color);
   color: var(--white-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  border-left: 0;
+  border-right: 0;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -198,7 +227,16 @@ ul {
 
 /* Peculiarities */
 
+.peculiarities-list {
+  display: flex;
+}
+
+.peculiarities-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .peculiarities-subtitle {
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
   line-height: calc(16 / 14);
