@@ -346,16 +346,14 @@ img {
 
 .address {
   font-style: normal;
+  max-height: 81px;
 }
 
-.address-item:not(:first-child) {
-  margin-top: 9px;
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address-link {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 14px;
   color: var(--white-text-color);
 }
 
@@ -365,7 +363,6 @@ img {
 }
 
 .address-contact {
-  text-transform: lowercase;
   line-height: calc(24 / 14);
   color: var(--footer-link-color);
 }
